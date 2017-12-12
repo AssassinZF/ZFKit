@@ -15,6 +15,7 @@
 		ABC3BB901FDF6E6A00045209 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC3BB8F1FDF6E6A00045209 /* main.m */; };
 		ABC3BB9A1FDF6E6A00045209 /* ZFKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC3BB991FDF6E6A00045209 /* ZFKitTests.m */; };
 		ABC3BBA51FDF6E6A00045209 /* ZFKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC3BBA41FDF6E6A00045209 /* ZFKitUITests.m */; };
+		ABC3BBB51FDF723C00045209 /* ZFView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC3BBB41FDF723C00045209 /* ZFView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,8 @@
 		ABC3BBA01FDF6E6A00045209 /* ZFKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZFKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC3BBA41FDF6E6A00045209 /* ZFKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFKitUITests.m; sourceTree = "<group>"; };
 		ABC3BBA61FDF6E6A00045209 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		ABC3BBB31FDF723C00045209 /* ZFView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFView.h; sourceTree = "<group>"; };
+		ABC3BBB41FDF723C00045209 /* ZFView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -101,6 +104,7 @@
 		ABC3BB7F1FDF6E6A00045209 /* ZFKit */ = {
 			isa = PBXGroup;
 			children = (
+				ABC3BBB21FDF71F000045209 /* Component */,
 				ABC3BB801FDF6E6A00045209 /* AppDelegate.h */,
 				ABC3BB811FDF6E6A00045209 /* AppDelegate.m */,
 				ABC3BB831FDF6E6A00045209 /* ViewController.h */,
@@ -130,6 +134,15 @@
 				ABC3BBA61FDF6E6A00045209 /* Info.plist */,
 			);
 			path = ZFKitUITests;
+			sourceTree = "<group>";
+		};
+		ABC3BBB21FDF71F000045209 /* Component */ = {
+			isa = PBXGroup;
+			children = (
+				ABC3BBB31FDF723C00045209 /* ZFView.h */,
+				ABC3BBB41FDF723C00045209 /* ZFView.m */,
+			);
+			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -267,6 +280,7 @@
 			files = (
 				ABC3BB851FDF6E6A00045209 /* ViewController.m in Sources */,
 				ABC3BB901FDF6E6A00045209 /* main.m in Sources */,
+				ABC3BBB51FDF723C00045209 /* ZFView.m in Sources */,
 				ABC3BB821FDF6E6A00045209 /* AppDelegate.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
