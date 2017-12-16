@@ -10,4 +10,18 @@
 
 @interface UIView (Expand)
 
+/**
+ 获取第一响应者
+
+ @return id
+ */
+- (id)findFirstResponder;
+
+
+/**
+ 屏幕快照
+
+ @return image
+ */
+- (UIImage *)snapshot;
 @end

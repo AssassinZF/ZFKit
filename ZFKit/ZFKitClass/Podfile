@@ -1,0 +1,10 @@
+/*************** iOS 开发第三方库  *******************/
+pod 'AFNetworking'
+pod 'SDWebImage'
+pod 'MBProgress'
+pod 'Toast'
+pod 'Masonry', '~> 1.0.2'
+pod 'MJRefresh', '~> 3.1.12'
+pod 'RDVTabBarController'#tabbar
+Pod 'YYKit' // YYModel YYCategories
+pod 'CocoaAsysocket' //socket

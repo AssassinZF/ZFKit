@@ -9,6 +9,7 @@
 #import "ViewController.h"
 #import "CommonMacro.h"
 #import "AppAuthority.h"
+#import "UIView+Toast.h"
 
 NSString *const constString = @"constString";
 
@@ -27,7 +28,9 @@ NSString *const constString = @"constString";
 
 -(void)viewDidAppear:(BOOL)animated{
     [super viewDidAppear:animated];
-
+    dispatch_after(dispatch_time(DISPATCH_TIME_NOW, (int64_t)(2 * NSEC_PER_SEC)), dispatch_get_main_queue(), ^{
+        [self.view makeToast:@"This is toast" position:[NSValue valueWithCGPoint:CGPointMake(100,100)]];
+    });
 }
 
 

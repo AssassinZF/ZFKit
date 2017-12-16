@@ -12,6 +12,16 @@
 		ABBE6E0A1FE4F1970025B8B8 /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBE6E091FE4F1970025B8B8 /* AppInfo.m */; };
 		ABBE6E0D1FE515E80025B8B8 /* AppAuthority.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBE6E0C1FE515E80025B8B8 /* AppAuthority.m */; };
 		ABBE6E121FE51CF10025B8B8 /* UIView+Expand.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBE6E111FE51CF10025B8B8 /* UIView+Expand.m */; };
+		ABBE6E151FE55BE70025B8B8 /* UIView+Toast.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBE6E131FE55BE60025B8B8 /* UIView+Toast.m */; };
+		ABBE6E181FE55C8E0025B8B8 /* ValueCheck.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBE6E171FE55C8E0025B8B8 /* ValueCheck.m */; };
+		ABBE6E1C1FE55DB10025B8B8 /* FileHandle.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBE6E1B1FE55DB10025B8B8 /* FileHandle.m */; };
+		ABBE6E311FE561F80025B8B8 /* LORandomUtil.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBE6E1F1FE561F80025B8B8 /* LORandomUtil.m */; };
+		ABBE6E321FE561F80025B8B8 /* AES.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBE6E221FE561F80025B8B8 /* AES.m */; };
+		ABBE6E331FE561F80025B8B8 /* RSA.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBE6E241FE561F80025B8B8 /* RSA.m */; };
+		ABBE6E341FE561F80025B8B8 /* SHA.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBE6E261FE561F80025B8B8 /* SHA.m */; };
+		ABBE6E351FE561F80025B8B8 /* LOJSONKit.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBE6E291FE561F80025B8B8 /* LOJSONKit.m */; };
+		ABBE6E361FE561F80025B8B8 /* GTMBase64.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBE6E2C1FE561F80025B8B8 /* GTMBase64.m */; };
+		ABBE6E371FE561F80025B8B8 /* LOTimer.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBE6E301FE561F80025B8B8 /* LOTimer.m */; };
 		ABC3BB821FDF6E6A00045209 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC3BB811FDF6E6A00045209 /* AppDelegate.m */; };
 		ABC3BB851FDF6E6A00045209 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC3BB841FDF6E6A00045209 /* ViewController.m */; };
 		ABC3BB881FDF6E6A00045209 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC3BB861FDF6E6A00045209 /* Main.storyboard */; };
@@ -40,7 +50,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
-		ABBE6DFF1FE4E83B0025B8B8 /* Podfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Podfile.h; sourceTree = "<group>"; };
+		ABBE6DFF1FE4E83B0025B8B8 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		ABBE6E001FE4EA620025B8B8 /* DeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
 		ABBE6E011FE4EA620025B8B8 /* DeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceInfo.m; sourceTree = "<group>"; };
 		ABBE6E041FE4F0E70025B8B8 /* NSData+CRC32.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CRC32.m"; sourceTree = "<group>"; };
@@ -52,6 +62,27 @@
 		ABBE6E0F1FE5180C0025B8B8 /* CommonMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonMacro.h; sourceTree = "<group>"; };
 		ABBE6E101FE51CF10025B8B8 /* UIView+Expand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Expand.h"; sourceTree = "<group>"; };
 		ABBE6E111FE51CF10025B8B8 /* UIView+Expand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Expand.m"; sourceTree = "<group>"; };
+		ABBE6E131FE55BE60025B8B8 /* UIView+Toast.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "UIView+Toast.m"; sourceTree = "<group>"; };
+		ABBE6E141FE55BE70025B8B8 /* UIView+Toast.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "UIView+Toast.h"; sourceTree = "<group>"; };
+		ABBE6E161FE55C8E0025B8B8 /* ValueCheck.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = ValueCheck.h; sourceTree = "<group>"; };
+		ABBE6E171FE55C8E0025B8B8 /* ValueCheck.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = ValueCheck.m; sourceTree = "<group>"; };
+		ABBE6E1A1FE55DB10025B8B8 /* FileHandle.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = FileHandle.h; sourceTree = "<group>"; };
+		ABBE6E1B1FE55DB10025B8B8 /* FileHandle.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = FileHandle.m; sourceTree = "<group>"; };
+		ABBE6E1E1FE561F80025B8B8 /* LORandomUtil.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LORandomUtil.h; sourceTree = "<group>"; };
+		ABBE6E1F1FE561F80025B8B8 /* LORandomUtil.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LORandomUtil.m; sourceTree = "<group>"; };
+		ABBE6E211FE561F80025B8B8 /* AES.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = AES.h; sourceTree = "<group>"; };
+		ABBE6E221FE561F80025B8B8 /* AES.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = AES.m; sourceTree = "<group>"; };
+		ABBE6E231FE561F80025B8B8 /* RSA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = RSA.h; sourceTree = "<group>"; };
+		ABBE6E241FE561F80025B8B8 /* RSA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = RSA.m; sourceTree = "<group>"; };
+		ABBE6E251FE561F80025B8B8 /* SHA.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SHA.h; sourceTree = "<group>"; };
+		ABBE6E261FE561F80025B8B8 /* SHA.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = SHA.m; sourceTree = "<group>"; };
+		ABBE6E281FE561F80025B8B8 /* LOJSONKit.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOJSONKit.h; sourceTree = "<group>"; };
+		ABBE6E291FE561F80025B8B8 /* LOJSONKit.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOJSONKit.m; sourceTree = "<group>"; };
+		ABBE6E2B1FE561F80025B8B8 /* GTMBase64.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMBase64.h; sourceTree = "<group>"; };
+		ABBE6E2C1FE561F80025B8B8 /* GTMBase64.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = GTMBase64.m; sourceTree = "<group>"; };
+		ABBE6E2D1FE561F80025B8B8 /* GTMDefines.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = GTMDefines.h; sourceTree = "<group>"; };
+		ABBE6E2F1FE561F80025B8B8 /* LOTimer.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = LOTimer.h; sourceTree = "<group>"; };
+		ABBE6E301FE561F80025B8B8 /* LOTimer.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = LOTimer.m; sourceTree = "<group>"; };
 		ABC3BB7D1FDF6E6A00045209 /* ZFKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZFKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC3BB801FDF6E6A00045209 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ABC3BB811FDF6E6A00045209 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -98,11 +129,12 @@
 		ABBE6DFA1FE4E3C50025B8B8 /* ZFKitClass */ = {
 			isa = PBXGroup;
 			children = (
+				ABBE6E191FE55D8F0025B8B8 /* Utils */,
 				ABBE6E0E1FE517CC0025B8B8 /* Macro */,
 				ABBE6DFB1FE4E5F00025B8B8 /* DeviceInfo */,
 				ABBE6E071FE4F1880025B8B8 /* AppInfo */,
 				ABBE6E031FE4F0BE0025B8B8 /* Category */,
-				ABBE6DFF1FE4E83B0025B8B8 /* Podfile.h */,
+				ABBE6DFF1FE4E83B0025B8B8 /* Podfile */,
 			);
 			path = ZFKitClass;
 			sourceTree = "<group>";
@@ -119,6 +151,10 @@
 		ABBE6E031FE4F0BE0025B8B8 /* Category */ = {
 			isa = PBXGroup;
 			children = (
+				ABBE6E161FE55C8E0025B8B8 /* ValueCheck.h */,
+				ABBE6E171FE55C8E0025B8B8 /* ValueCheck.m */,
+				ABBE6E141FE55BE70025B8B8 /* UIView+Toast.h */,
+				ABBE6E131FE55BE60025B8B8 /* UIView+Toast.m */,
 				ABBE6E051FE4F0E70025B8B8 /* NSData+CRC32.h */,
 				ABBE6E041FE4F0E70025B8B8 /* NSData+CRC32.m */,
 				ABBE6E101FE51CF10025B8B8 /* UIView+Expand.h */,
@@ -144,6 +180,70 @@
 				ABBE6E0F1FE5180C0025B8B8 /* CommonMacro.h */,
 			);
 			path = Macro;
+			sourceTree = "<group>";
+		};
+		ABBE6E191FE55D8F0025B8B8 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				ABBE6E2A1FE561F80025B8B8 /* Base64 */,
+				ABBE6E201FE561F80025B8B8 /* Encrypt */,
+				ABBE6E271FE561F80025B8B8 /* JsonKit */,
+				ABBE6E1D1FE561F80025B8B8 /* Random */,
+				ABBE6E2E1FE561F80025B8B8 /* Timer */,
+				ABBE6E1A1FE55DB10025B8B8 /* FileHandle.h */,
+				ABBE6E1B1FE55DB10025B8B8 /* FileHandle.m */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		ABBE6E1D1FE561F80025B8B8 /* Random */ = {
+			isa = PBXGroup;
+			children = (
+				ABBE6E1E1FE561F80025B8B8 /* LORandomUtil.h */,
+				ABBE6E1F1FE561F80025B8B8 /* LORandomUtil.m */,
+			);
+			path = Random;
+			sourceTree = "<group>";
+		};
+		ABBE6E201FE561F80025B8B8 /* Encrypt */ = {
+			isa = PBXGroup;
+			children = (
+				ABBE6E211FE561F80025B8B8 /* AES.h */,
+				ABBE6E221FE561F80025B8B8 /* AES.m */,
+				ABBE6E231FE561F80025B8B8 /* RSA.h */,
+				ABBE6E241FE561F80025B8B8 /* RSA.m */,
+				ABBE6E251FE561F80025B8B8 /* SHA.h */,
+				ABBE6E261FE561F80025B8B8 /* SHA.m */,
+			);
+			path = Encrypt;
+			sourceTree = "<group>";
+		};
+		ABBE6E271FE561F80025B8B8 /* JsonKit */ = {
+			isa = PBXGroup;
+			children = (
+				ABBE6E281FE561F80025B8B8 /* LOJSONKit.h */,
+				ABBE6E291FE561F80025B8B8 /* LOJSONKit.m */,
+			);
+			path = JsonKit;
+			sourceTree = "<group>";
+		};
+		ABBE6E2A1FE561F80025B8B8 /* Base64 */ = {
+			isa = PBXGroup;
+			children = (
+				ABBE6E2B1FE561F80025B8B8 /* GTMBase64.h */,
+				ABBE6E2C1FE561F80025B8B8 /* GTMBase64.m */,
+				ABBE6E2D1FE561F80025B8B8 /* GTMDefines.h */,
+			);
+			path = Base64;
+			sourceTree = "<group>";
+		};
+		ABBE6E2E1FE561F80025B8B8 /* Timer */ = {
+			isa = PBXGroup;
+			children = (
+				ABBE6E2F1FE561F80025B8B8 /* LOTimer.h */,
+				ABBE6E301FE561F80025B8B8 /* LOTimer.m */,
+			);
+			path = Timer;
 			sourceTree = "<group>";
 		};
 		ABC3BB741FDF6E6A00045209 = {
@@ -334,14 +434,24 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABBE6E371FE561F80025B8B8 /* LOTimer.m in Sources */,
+				ABBE6E341FE561F80025B8B8 /* SHA.m in Sources */,
+				ABBE6E331FE561F80025B8B8 /* RSA.m in Sources */,
+				ABBE6E181FE55C8E0025B8B8 /* ValueCheck.m in Sources */,
+				ABBE6E351FE561F80025B8B8 /* LOJSONKit.m in Sources */,
+				ABBE6E151FE55BE70025B8B8 /* UIView+Toast.m in Sources */,
 				ABBE6E0D1FE515E80025B8B8 /* AppAuthority.m in Sources */,
+				ABBE6E311FE561F80025B8B8 /* LORandomUtil.m in Sources */,
 				ABBE6E061FE4F0E70025B8B8 /* NSData+CRC32.m in Sources */,
 				ABC3BB851FDF6E6A00045209 /* ViewController.m in Sources */,
+				ABBE6E1C1FE55DB10025B8B8 /* FileHandle.m in Sources */,
 				ABC3BB901FDF6E6A00045209 /* main.m in Sources */,
 				ABBE6E0A1FE4F1970025B8B8 /* AppInfo.m in Sources */,
 				ABC3BB821FDF6E6A00045209 /* AppDelegate.m in Sources */,
 				ABBE6E121FE51CF10025B8B8 /* UIView+Expand.m in Sources */,
+				ABBE6E361FE561F80025B8B8 /* GTMBase64.m in Sources */,
 				ABBE6E021FE4EA620025B8B8 /* DeviceInfo.m in Sources */,
+				ABBE6E321FE561F80025B8B8 /* AES.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

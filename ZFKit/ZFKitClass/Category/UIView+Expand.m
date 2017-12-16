@@ -9,4 +9,29 @@
 #import "UIView+Expand.h"
 
 @implementation UIView (Expand)
+
+- (id)findFirstResponder
+{
+    if([self isFirstResponder]) {
+        return self;
+    }
+    
+    for (UIView *subView in self.subviews) {
+        id view = [subView findFirstResponder];
+        if (view) {
+            return view;
+        }
+    }
+    return nil;
+}
+
+- (UIImage *)snapshot {
+    UIGraphicsBeginImageContext(self.frame.size);
+    CGContextRef context = UIGraphicsGetCurrentContext();
+    [self.layer renderInContext:context];
+    UIImage* snapshot = UIGraphicsGetImageFromCurrentImageContext();
+    UIGraphicsEndImageContext();
+    return snapshot;
+}
+
 @end
