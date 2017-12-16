@@ -8,6 +8,7 @@
 
 #import "ViewController.h"
 #import "CommonMacro.h"
+#import "AppAuthority.h"
 
 NSString *const constString = @"constString";
 
@@ -19,8 +20,14 @@ NSString *const constString = @"constString";
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    DLog(@"我是男生");
     
+
+    
+}
+
+-(void)viewDidAppear:(BOOL)animated{
+    [super viewDidAppear:animated];
+
 }
 
 

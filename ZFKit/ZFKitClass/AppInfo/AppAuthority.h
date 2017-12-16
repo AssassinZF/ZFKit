@@ -10,6 +10,10 @@
 #import <Photos/Photos.h>
 #import <AVFoundation/AVFoundation.h>
 #import <CoreLocation/CoreLocation.h>
+#import <AddressBook/AddressBook.h>
+#import <Contacts/Contacts.h>
+
+typedef void(^ApplyAuthorizationResult)(BOOL isSuccess);
 
 #warning 注意获取权限必须要在 info.plist 里面 包含相应权限KEY
 /*
@@ -44,14 +48,12 @@
 
 /**
  apply PhotoAuthorization
-
- @return result
  */
-+(BOOL)applyPhotoAuthorization;
++(void)applyPhotoAuthorization:(ApplyAuthorizationResult)result;
 
 //申请相机和麦克风权限
-+(BOOL)applyVideoAVAuthorization;
-+(BOOL)applyAudioAVAuthorization;
++(void)applyVideoAVAuthorization:(ApplyAuthorizationResult)result;
++(void)applyAudioAVAuthorization:(ApplyAuthorizationResult)result;
 
 +(AVAuthorizationStatus)audioAuthorizationStatus;
 +(AVAuthorizationStatus)videoAuthorizationStatus;
@@ -59,4 +61,16 @@
 //定位权限
 +(void)applyLocationAuthorization;
 -(CLAuthorizationStatus)locationAuthorization;
+
+//查看打印当前推送类型
++(void)lookPushNotificationType;
+
+//通讯录权限
++(void)applyAddressBookAuthorization_iOS9later:(ApplyAuthorizationResult)result;//iOS9_later
++(void)applyAddressBookAuthorization:(ApplyAuthorizationResult)result;
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
++(ABAuthorizationStatus)addressBookAuthorizationStatus;
+#pragma clang diagnostic pop
 @end

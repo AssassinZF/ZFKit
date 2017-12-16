@@ -8,43 +8,24 @@
 
 #import "AppAuthority.h"
 #import "CommonMacro.h"
-
 @implementation AppAuthority
 
-+(BOOL)applyPhotoAuthorization{
-    __block BOOL isAllow = NO;
++(void)applyPhotoAuthorization:(ApplyAuthorizationResult)result{
     [PHPhotoLibrary requestAuthorization:^(PHAuthorizationStatus status) {
-        if (status == PHAuthorizationStatusAuthorized) {
-            isAllow = YES;
-        }
+        result(status == PHAuthorizationStatusAuthorized);
     }];
-    return isAllow;
 }
 
-+(BOOL)applyVideoAVAuthorization{
-    __block BOOL isAllow = NO;
++(void)applyVideoAVAuthorization:(ApplyAuthorizationResult)result{
     [AVCaptureDevice requestAccessForMediaType:AVMediaTypeVideo completionHandler:^(BOOL granted) {//相机权限
-        if (granted) {
-            isAllow = YES;
-        }else{
-            NSLog(@"Denied or Restricted");
-        }
+        result(granted);
     }];
-    return isAllow;
 }
 
-+(BOOL)applyAudioAVAuthorization{
-    __block BOOL isAllow = NO;
++(void)applyAudioAVAuthorization:(ApplyAuthorizationResult)result{
     [AVCaptureDevice requestAccessForMediaType:AVMediaTypeAudio completionHandler:^(BOOL granted) {//麦克风权限
-        if (granted) {
-            isAllow = YES;
-            NSLog(@"Authorized");
-        }else{
-            NSLog(@"Denied or Restricted");
-        }
+        result(granted);
     }];
-    
-    return isAllow;
 }
 
 +(void)applyLocationAuthorization{
@@ -53,6 +34,65 @@
     [manager requestWhenInUseAuthorization];//使用的时候获取定位信息
     //代理方法中检查定位权限的改动
 }
+
++(void)applyAddressBookAuthorization_iOS9later:(ApplyAuthorizationResult)result{
+    CNContactStore *contactStore = [[CNContactStore alloc] init];
+    [contactStore requestAccessForEntityType:CNEntityTypeContacts completionHandler:^(BOOL granted, NSError * _Nullable error) {
+        result(granted);
+    }];
+}
+
+#pragma clang diagnostic push
+#pragma clang diagnostic ignored "-Wdeprecated-declarations"
+
++(void)applyAddressBookAuthorization:(ApplyAuthorizationResult)result{
+    ABAddressBookRef addressBook = ABAddressBookCreateWithOptions(NULL, NULL);
+    ABAddressBookRequestAccessWithCompletion(addressBook, ^(bool granted, CFErrorRef error) {
+        result(granted);
+        CFRelease(addressBook);
+    });
+}
+
++(ABAuthorizationStatus)addressBookAuthorizationStatus{
+    ABAuthorizationStatus ABstatus = ABAddressBookGetAuthorizationStatus();
+    switch (ABstatus) {
+            case kABAuthorizationStatusAuthorized:
+            return kABAuthorizationStatusAuthorized;
+            break;
+            case kABAuthorizationStatusDenied:
+            return kABAuthorizationStatusDenied;
+            break;
+            case kABAuthorizationStatusNotDetermined:
+            return kABAuthorizationStatusNotDetermined;
+            break;
+            case kABAuthorizationStatusRestricted:
+            return kABAuthorizationStatusRestricted;
+            break;
+        default:
+            break;
+    }
+}
+
++(void)lookPushNotificationType{
+    UIUserNotificationSettings *settings = [[UIApplication sharedApplication] currentUserNotificationSettings];
+    switch (settings.types) {
+            case UIUserNotificationTypeNone:
+            DLog(@"None");
+            break;
+            case UIUserNotificationTypeAlert:
+            DLog(@"Alert Notification");
+            break;
+            case UIUserNotificationTypeBadge:
+            DLog(@"Badge Notification");
+            break;
+            case UIUserNotificationTypeSound:
+            DLog(@"sound Notification'");
+            break;
+        default:
+            break;
+    }
+}
+#pragma clang diagnostic pop
 
 +(CLAuthorizationStatus)locationAuthorization{
     CLAuthorizationStatus CLstatus = [CLLocationManager authorizationStatus];
