@@ -7,6 +7,9 @@
 //
 
 #import "ViewController.h"
+#import "CommonMacro.h"
+
+NSString *const constString = @"constString";
 
 @interface ViewController ()
 
@@ -16,7 +19,8 @@
 
 - (void)viewDidLoad {
     [super viewDidLoad];
-    // Do any additional setup after loading the view, typically from a nib.
+    DLog(@"我是男生");
+    
 }
 
 

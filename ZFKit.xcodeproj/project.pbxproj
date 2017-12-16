@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		ABBE6E021FE4EA620025B8B8 /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBE6E011FE4EA620025B8B8 /* DeviceInfo.m */; };
+		ABBE6E061FE4F0E70025B8B8 /* NSData+CRC32.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBE6E041FE4F0E70025B8B8 /* NSData+CRC32.m */; };
+		ABBE6E0A1FE4F1970025B8B8 /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBE6E091FE4F1970025B8B8 /* AppInfo.m */; };
+		ABBE6E0D1FE515E80025B8B8 /* AppAuthority.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBE6E0C1FE515E80025B8B8 /* AppAuthority.m */; };
+		ABBE6E121FE51CF10025B8B8 /* UIView+Expand.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBE6E111FE51CF10025B8B8 /* UIView+Expand.m */; };
 		ABC3BB821FDF6E6A00045209 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC3BB811FDF6E6A00045209 /* AppDelegate.m */; };
 		ABC3BB851FDF6E6A00045209 /* ViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC3BB841FDF6E6A00045209 /* ViewController.m */; };
 		ABC3BB881FDF6E6A00045209 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = ABC3BB861FDF6E6A00045209 /* Main.storyboard */; };
@@ -15,7 +20,6 @@
 		ABC3BB901FDF6E6A00045209 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC3BB8F1FDF6E6A00045209 /* main.m */; };
 		ABC3BB9A1FDF6E6A00045209 /* ZFKitTests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC3BB991FDF6E6A00045209 /* ZFKitTests.m */; };
 		ABC3BBA51FDF6E6A00045209 /* ZFKitUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC3BBA41FDF6E6A00045209 /* ZFKitUITests.m */; };
-		ABC3BBB51FDF723C00045209 /* ZFView.m in Sources */ = {isa = PBXBuildFile; fileRef = ABC3BBB41FDF723C00045209 /* ZFView.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -36,6 +40,18 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		ABBE6DFF1FE4E83B0025B8B8 /* Podfile.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Podfile.h; sourceTree = "<group>"; };
+		ABBE6E001FE4EA620025B8B8 /* DeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
+		ABBE6E011FE4EA620025B8B8 /* DeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceInfo.m; sourceTree = "<group>"; };
+		ABBE6E041FE4F0E70025B8B8 /* NSData+CRC32.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = "NSData+CRC32.m"; sourceTree = "<group>"; };
+		ABBE6E051FE4F0E70025B8B8 /* NSData+CRC32.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = "NSData+CRC32.h"; sourceTree = "<group>"; };
+		ABBE6E081FE4F1970025B8B8 /* AppInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppInfo.h; sourceTree = "<group>"; };
+		ABBE6E091FE4F1970025B8B8 /* AppInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppInfo.m; sourceTree = "<group>"; };
+		ABBE6E0B1FE515E80025B8B8 /* AppAuthority.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppAuthority.h; sourceTree = "<group>"; };
+		ABBE6E0C1FE515E80025B8B8 /* AppAuthority.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppAuthority.m; sourceTree = "<group>"; };
+		ABBE6E0F1FE5180C0025B8B8 /* CommonMacro.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CommonMacro.h; sourceTree = "<group>"; };
+		ABBE6E101FE51CF10025B8B8 /* UIView+Expand.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+Expand.h"; sourceTree = "<group>"; };
+		ABBE6E111FE51CF10025B8B8 /* UIView+Expand.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+Expand.m"; sourceTree = "<group>"; };
 		ABC3BB7D1FDF6E6A00045209 /* ZFKit.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = ZFKit.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC3BB801FDF6E6A00045209 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		ABC3BB811FDF6E6A00045209 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -52,8 +68,6 @@
 		ABC3BBA01FDF6E6A00045209 /* ZFKitUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = ZFKitUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		ABC3BBA41FDF6E6A00045209 /* ZFKitUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFKitUITests.m; sourceTree = "<group>"; };
 		ABC3BBA61FDF6E6A00045209 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
-		ABC3BBB31FDF723C00045209 /* ZFView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ZFView.h; sourceTree = "<group>"; };
-		ABC3BBB41FDF723C00045209 /* ZFView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ZFView.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -81,6 +95,57 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		ABBE6DFA1FE4E3C50025B8B8 /* ZFKitClass */ = {
+			isa = PBXGroup;
+			children = (
+				ABBE6E0E1FE517CC0025B8B8 /* Macro */,
+				ABBE6DFB1FE4E5F00025B8B8 /* DeviceInfo */,
+				ABBE6E071FE4F1880025B8B8 /* AppInfo */,
+				ABBE6E031FE4F0BE0025B8B8 /* Category */,
+				ABBE6DFF1FE4E83B0025B8B8 /* Podfile.h */,
+			);
+			path = ZFKitClass;
+			sourceTree = "<group>";
+		};
+		ABBE6DFB1FE4E5F00025B8B8 /* DeviceInfo */ = {
+			isa = PBXGroup;
+			children = (
+				ABBE6E001FE4EA620025B8B8 /* DeviceInfo.h */,
+				ABBE6E011FE4EA620025B8B8 /* DeviceInfo.m */,
+			);
+			path = DeviceInfo;
+			sourceTree = "<group>";
+		};
+		ABBE6E031FE4F0BE0025B8B8 /* Category */ = {
+			isa = PBXGroup;
+			children = (
+				ABBE6E051FE4F0E70025B8B8 /* NSData+CRC32.h */,
+				ABBE6E041FE4F0E70025B8B8 /* NSData+CRC32.m */,
+				ABBE6E101FE51CF10025B8B8 /* UIView+Expand.h */,
+				ABBE6E111FE51CF10025B8B8 /* UIView+Expand.m */,
+			);
+			path = Category;
+			sourceTree = "<group>";
+		};
+		ABBE6E071FE4F1880025B8B8 /* AppInfo */ = {
+			isa = PBXGroup;
+			children = (
+				ABBE6E081FE4F1970025B8B8 /* AppInfo.h */,
+				ABBE6E091FE4F1970025B8B8 /* AppInfo.m */,
+				ABBE6E0B1FE515E80025B8B8 /* AppAuthority.h */,
+				ABBE6E0C1FE515E80025B8B8 /* AppAuthority.m */,
+			);
+			path = AppInfo;
+			sourceTree = "<group>";
+		};
+		ABBE6E0E1FE517CC0025B8B8 /* Macro */ = {
+			isa = PBXGroup;
+			children = (
+				ABBE6E0F1FE5180C0025B8B8 /* CommonMacro.h */,
+			);
+			path = Macro;
+			sourceTree = "<group>";
+		};
 		ABC3BB741FDF6E6A00045209 = {
 			isa = PBXGroup;
 			children = (
@@ -104,7 +169,7 @@
 		ABC3BB7F1FDF6E6A00045209 /* ZFKit */ = {
 			isa = PBXGroup;
 			children = (
-				ABC3BBB21FDF71F000045209 /* Component */,
+				ABBE6DFA1FE4E3C50025B8B8 /* ZFKitClass */,
 				ABC3BB801FDF6E6A00045209 /* AppDelegate.h */,
 				ABC3BB811FDF6E6A00045209 /* AppDelegate.m */,
 				ABC3BB831FDF6E6A00045209 /* ViewController.h */,
@@ -134,15 +199,6 @@
 				ABC3BBA61FDF6E6A00045209 /* Info.plist */,
 			);
 			path = ZFKitUITests;
-			sourceTree = "<group>";
-		};
-		ABC3BBB21FDF71F000045209 /* Component */ = {
-			isa = PBXGroup;
-			children = (
-				ABC3BBB31FDF723C00045209 /* ZFView.h */,
-				ABC3BBB41FDF723C00045209 /* ZFView.m */,
-			);
-			path = Component;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -278,10 +334,14 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				ABBE6E0D1FE515E80025B8B8 /* AppAuthority.m in Sources */,
+				ABBE6E061FE4F0E70025B8B8 /* NSData+CRC32.m in Sources */,
 				ABC3BB851FDF6E6A00045209 /* ViewController.m in Sources */,
 				ABC3BB901FDF6E6A00045209 /* main.m in Sources */,
-				ABC3BBB51FDF723C00045209 /* ZFView.m in Sources */,
+				ABBE6E0A1FE4F1970025B8B8 /* AppInfo.m in Sources */,
 				ABC3BB821FDF6E6A00045209 /* AppDelegate.m in Sources */,
+				ABBE6E121FE51CF10025B8B8 /* UIView+Expand.m in Sources */,
+				ABBE6E021FE4EA620025B8B8 /* DeviceInfo.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
