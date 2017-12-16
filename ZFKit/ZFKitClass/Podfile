@@ -8,3 +8,4 @@ pod 'MJRefresh', '~> 3.1.12'
 pod 'RDVTabBarController'#tabbar
 Pod 'YYKit' // YYModel YYCategories
 pod 'CocoaAsysocket' //socket
+pod 'YTKNetwork'//封装的 AFNetworking 第三方库
