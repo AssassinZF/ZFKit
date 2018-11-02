@@ -7,6 +7,10 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		0100FC73218BE17B00F7145F /* BNBaseNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 0100FC72218BE17B00F7145F /* BNBaseNavigationController.m */; };
+		0100FC79218BEC4300F7145F /* BaseTemplateCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 0100FC78218BEC4300F7145F /* BaseTemplateCell.m */; };
+		0100FC7C218BF13700F7145F /* TableDataSource.m in Sources */ = {isa = PBXBuildFile; fileRef = 0100FC7B218BF13700F7145F /* TableDataSource.m */; };
+		0100FC7F218BF31F00F7145F /* ModuleDataProvider.m in Sources */ = {isa = PBXBuildFile; fileRef = 0100FC7E218BF31F00F7145F /* ModuleDataProvider.m */; };
 		ABBE6E021FE4EA620025B8B8 /* DeviceInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBE6E011FE4EA620025B8B8 /* DeviceInfo.m */; };
 		ABBE6E061FE4F0E70025B8B8 /* NSData+CRC32.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBE6E041FE4F0E70025B8B8 /* NSData+CRC32.m */; };
 		ABBE6E0A1FE4F1970025B8B8 /* AppInfo.m in Sources */ = {isa = PBXBuildFile; fileRef = ABBE6E091FE4F1970025B8B8 /* AppInfo.m */; };
@@ -50,6 +54,17 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		0100FC71218BE17B00F7145F /* BNBaseNavigationController.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = BNBaseNavigationController.h; sourceTree = "<group>"; };
+		0100FC72218BE17B00F7145F /* BNBaseNavigationController.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = BNBaseNavigationController.m; sourceTree = "<group>"; };
+		0100FC74218BE1D500F7145F /* PrefixHeader.pch */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PrefixHeader.pch; sourceTree = "<group>"; };
+		0100FC76218BEBE000F7145F /* ModuleProviderProtocol.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleProviderProtocol.h; sourceTree = "<group>"; };
+		0100FC77218BEC4300F7145F /* BaseTemplateCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = BaseTemplateCell.h; sourceTree = "<group>"; };
+		0100FC78218BEC4300F7145F /* BaseTemplateCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = BaseTemplateCell.m; sourceTree = "<group>"; };
+		0100FC7A218BF13700F7145F /* TableDataSource.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TableDataSource.h; sourceTree = "<group>"; };
+		0100FC7B218BF13700F7145F /* TableDataSource.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TableDataSource.m; sourceTree = "<group>"; };
+		0100FC7D218BF31F00F7145F /* ModuleDataProvider.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = ModuleDataProvider.h; sourceTree = "<group>"; };
+		0100FC7E218BF31F00F7145F /* ModuleDataProvider.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = ModuleDataProvider.m; sourceTree = "<group>"; };
+		0100FC80218BF7D900F7145F /* FMCellProtocol.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = FMCellProtocol.h; sourceTree = "<group>"; };
 		ABBE6DFF1FE4E83B0025B8B8 /* Podfile */ = {isa = PBXFileReference; lastKnownFileType = text; path = Podfile; sourceTree = "<group>"; };
 		ABBE6E001FE4EA620025B8B8 /* DeviceInfo.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = DeviceInfo.h; sourceTree = "<group>"; };
 		ABBE6E011FE4EA620025B8B8 /* DeviceInfo.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = DeviceInfo.m; sourceTree = "<group>"; };
@@ -126,9 +141,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		0100FC70218BE12700F7145F /* BaseNav */ = {
+			isa = PBXGroup;
+			children = (
+				0100FC71218BE17B00F7145F /* BNBaseNavigationController.h */,
+				0100FC72218BE17B00F7145F /* BNBaseNavigationController.m */,
+			);
+			path = BaseNav;
+			sourceTree = "<group>";
+		};
+		0100FC75218BEA9B00F7145F /* TableView */ = {
+			isa = PBXGroup;
+			children = (
+				0100FC80218BF7D900F7145F /* FMCellProtocol.h */,
+				0100FC76218BEBE000F7145F /* ModuleProviderProtocol.h */,
+				0100FC77218BEC4300F7145F /* BaseTemplateCell.h */,
+				0100FC78218BEC4300F7145F /* BaseTemplateCell.m */,
+				0100FC7A218BF13700F7145F /* TableDataSource.h */,
+				0100FC7B218BF13700F7145F /* TableDataSource.m */,
+				0100FC7D218BF31F00F7145F /* ModuleDataProvider.h */,
+				0100FC7E218BF31F00F7145F /* ModuleDataProvider.m */,
+			);
+			path = TableView;
+			sourceTree = "<group>";
+		};
 		ABBE6DFA1FE4E3C50025B8B8 /* ZFKitClass */ = {
 			isa = PBXGroup;
 			children = (
+				0100FC75218BEA9B00F7145F /* TableView */,
+				0100FC70218BE12700F7145F /* BaseNav */,
 				ABBE6E191FE55D8F0025B8B8 /* Utils */,
 				ABBE6E0E1FE517CC0025B8B8 /* Macro */,
 				ABBE6DFB1FE4E5F00025B8B8 /* DeviceInfo */,
@@ -279,6 +320,7 @@
 				ABC3BB8B1FDF6E6A00045209 /* LaunchScreen.storyboard */,
 				ABC3BB8E1FDF6E6A00045209 /* Info.plist */,
 				ABC3BB8F1FDF6E6A00045209 /* main.m */,
+				0100FC74218BE1D500F7145F /* PrefixHeader.pch */,
 			);
 			path = ZFKit;
 			sourceTree = "<group>";
@@ -436,11 +478,14 @@
 			files = (
 				ABBE6E371FE561F80025B8B8 /* LOTimer.m in Sources */,
 				ABBE6E341FE561F80025B8B8 /* SHA.m in Sources */,
+				0100FC73218BE17B00F7145F /* BNBaseNavigationController.m in Sources */,
+				0100FC7C218BF13700F7145F /* TableDataSource.m in Sources */,
 				ABBE6E331FE561F80025B8B8 /* RSA.m in Sources */,
 				ABBE6E181FE55C8E0025B8B8 /* ValueCheck.m in Sources */,
 				ABBE6E351FE561F80025B8B8 /* LOJSONKit.m in Sources */,
 				ABBE6E151FE55BE70025B8B8 /* UIView+Toast.m in Sources */,
 				ABBE6E0D1FE515E80025B8B8 /* AppAuthority.m in Sources */,
+				0100FC79218BEC4300F7145F /* BaseTemplateCell.m in Sources */,
 				ABBE6E311FE561F80025B8B8 /* LORandomUtil.m in Sources */,
 				ABBE6E061FE4F0E70025B8B8 /* NSData+CRC32.m in Sources */,
 				ABC3BB851FDF6E6A00045209 /* ViewController.m in Sources */,
@@ -449,6 +494,7 @@
 				ABBE6E0A1FE4F1970025B8B8 /* AppInfo.m in Sources */,
 				ABC3BB821FDF6E6A00045209 /* AppDelegate.m in Sources */,
 				ABBE6E121FE51CF10025B8B8 /* UIView+Expand.m in Sources */,
+				0100FC7F218BF31F00F7145F /* ModuleDataProvider.m in Sources */,
 				ABBE6E361FE561F80025B8B8 /* GTMBase64.m in Sources */,
 				ABBE6E021FE4EA620025B8B8 /* DeviceInfo.m in Sources */,
 				ABBE6E321FE561F80025B8B8 /* AES.m in Sources */,
@@ -615,6 +661,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/kris/Desktop/ZFKit/ZFKit/PrefixHeader.pch;
 				INFOPLIST_FILE = ZFKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zf.ZFKit;
@@ -628,6 +676,8 @@
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
+				GCC_PRECOMPILE_PREFIX_HEADER = YES;
+				GCC_PREFIX_HEADER = /Users/kris/Desktop/ZFKit/ZFKit/PrefixHeader.pch;
 				INFOPLIST_FILE = ZFKit/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = "$(inherited) @executable_path/Frameworks";
 				PRODUCT_BUNDLE_IDENTIFIER = com.zf.ZFKit;
