@@ -2,8 +2,8 @@
 //  LOJSONKit.m
 //  Foundation
 //
-//  Created by Keldon on 16-6-7.
-//  Copyright (c) 2014年 Keldon. All rights reserved.
+//  Created by ZF on 16-6-7.
+//  Copyright (c) 2014年 ZF. All rights reserved.
 //
 
 #import "LOJSONKit.h"

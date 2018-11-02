@@ -2,8 +2,8 @@
 //  NSData+Encryption.m
 //  MSZX
 //
-//  Created by Keldon on 14-11-11.
-//  Copyright (c) 2014年 Keldon. All rights reserved.
+//  Created by ZF on 14-11-11.
+//  Copyright (c) 2014年 ZF. All rights reserved.
 //
 
 #import "AES.h"
