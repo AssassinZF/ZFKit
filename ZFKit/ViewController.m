@@ -23,6 +23,7 @@ NSString *const constString = @"constString";
     [super viewDidLoad];
     
 
+    NSLog(@"hello");
     
 }
 
